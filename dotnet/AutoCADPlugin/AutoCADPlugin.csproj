@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target .NET Framework 4.8 agar kompatibel dengan AutoCAD 2020+ -->
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>AutoCADPlugin</AssemblyName>
+    <RootNamespace>AutoCADPlugin</RootNamespace>
+    <OutputType>Library</OutputType>
+    <Nullable>enable</Nullable>
+    <LangVersion>9.0</LangVersion>
+    <!-- Output langsung ke folder Release yang mudah diakses -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      Referensi ke AutoCAD .NET API.
+      Ganti path di bawah sesuai dengan versi dan lokasi instalasi AutoCAD Anda.
+      Path umum:
+        C:\Program Files\Autodesk\AutoCAD 2024\
+        C:\Program Files\Autodesk\AutoCAD 2023\
+    -->
+    <Reference Include="AcMgd">
+      <HintPath>$(AcadInstallPath)AcMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AcDbMgd">
+      <HintPath>$(AcadInstallPath)AcDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AcCoreMgd">
+      <HintPath>$(AcadInstallPath)AcCoreMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
