@@ -1,0 +1,6 @@
+# Visual Studio build artifacts
+dotnet/**/bin/
+dotnet/**/obj/
+*.user
+*.suo
+.vs/
