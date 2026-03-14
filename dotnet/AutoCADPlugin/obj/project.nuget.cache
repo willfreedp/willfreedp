@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uoaYcf1gKH0=",
+  "success": true,
+  "projectFilePath": "/home/runner/work/willfreedp/willfreedp/dotnet/AutoCADPlugin/AutoCADPlugin.csproj",
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-bf853309c6d7e980/dbs/csharp/working/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/tmp/codeql-scratch-bf853309c6d7e980/dbs/csharp/working/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
